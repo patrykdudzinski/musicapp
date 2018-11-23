@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_marginTop="18dp">
+
+    <TextView
+        android:id="@+id/RegisterHeaderAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasła nie są zgodne"
+        android:textSize="20sp"
+        android:textColor="@color/Register_AlertHeaderColor"
+        android:visibility="invisible"
+        android:layout_marginBottom="15dp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/RegisterHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/RegisterView_Header"
+            android:textSize="20sp"
+            android:layout_marginBottom="35dp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+            android:id="@+id/AccountPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint = "Podaj hasło"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/PassCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/AccountEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/PhoneRegister"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Numer telefonu"
+        android:inputType="phone" />
+
+    <CheckedTextView
+        android:id="@+id/RODOCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyrażam zgodę na przetwarzanie danych" />
+
+    <CheckedTextView
+        android:id="@+id/NewsletterCheckbox"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:text="Chcę otrzymywać informacje marketingowe." />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterApprove"
+        android:layout_marginBottom="20dp"
+        android:text="GOTOWE"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>
+
