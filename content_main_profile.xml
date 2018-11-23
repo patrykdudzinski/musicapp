@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="57dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="230dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/PanelHeader"
+            android:textSize="32sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="352dp"
+        android:layout_height="414dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="19dp"
+        android:paddingTop="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="19dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <Button
+            android:id="@+id/NewPlaylistButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="NOWA PLAYLISTA"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <Button
+            android:id="@+id/SavedButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="ZAPISANE"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <Button
+            android:id="@+id/StatButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="STATYSTYKI"
+            android:onClick="MainScreenButtons"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <Button
+            android:id="@+id/ProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="PROFIL"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
