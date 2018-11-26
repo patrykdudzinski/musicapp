@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".Stats">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_editor_absoluteX="20dp"
+        app:layout_editor_absoluteY="30dp">
+
+        <TextView
+            android:id="@+id/StatsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/headerPadding"
+            android:paddingLeft="@dimen/headerPadding"
+            android:text="Statystyki słuchania pomiędzy:"
+            android:textSize="@dimen/headerFontSize" />
+
+
+        <EditText
+            android:id="@+id/DateFromInput"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:hint="Data Początkowa"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/DateToInput"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/DateFromInput"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/DateFromInput"
+            android:ems="10"
+            android:hint="Data końcowa"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/StatLoadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="138dp"
+            android:layout_marginEnd="0dp"
+            android:text="Pokaż statystyki" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/DateFromInput"
+        android:layout_centerVertical="true"
+        tools:layout_editor_absoluteX="10dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.GridLayout>
+
 </android.support.constraint.ConstraintLayout>
