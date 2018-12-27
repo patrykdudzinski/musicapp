@@ -57,8 +57,8 @@
             android:id="@+id/StatButton"
             android:layout_width="match_parent"
             android:layout_height="96dp"
-            android:text="STATYSTYKI"
             android:onClick="MainScreenButtons"
+            android:text="STATYSTYKI"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="295dp" />
 

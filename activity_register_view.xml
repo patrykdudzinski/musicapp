@@ -15,7 +15,7 @@
         android:id="@+id/RegisterHeaderAlert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasła nie są zgodne"
+        android:text=""
         android:textSize="20sp"
         android:textColor="@color/Register_AlertHeaderColor"
         android:visibility="invisible"
@@ -83,7 +83,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/RegisterApprove"
+        android:id="@+id/btnadd"
+        android:onClick="addUser"
         android:layout_marginBottom="20dp"
         android:text="GOTOWE"
         android:textStyle="bold"

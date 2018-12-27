@@ -6,4 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".Stats">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="20dp"
+            app:layout_editor_absoluteY="30dp">
+
+
+            <TextView
+                android:id="@+id/StatsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/headerPadding"
+                android:paddingLeft="@dimen/headerPadding"
+                android:text="Statystyki słuchania pomiędzy:"
+                android:textSize="@dimen/headerFontSize" />
+
+
+            <EditText
+                android:id="@+id/DateFromInput"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="65dp"
+                android:ems="10"
+                android:hint="Data Początkowa"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/DateToInput"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/DateFromInput"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/DateFromInput"
+                android:ems="10"
+                android:hint="Data końcowa"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/StatLoadButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="138dp"
+                android:layout_marginEnd="0dp"
+                android:text="Pokaż statystyki" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/StatLoadButton"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="209dp"
+                android:paddingLeft="@dimen/headerPadding"
+                android:text="Top Wykonawcy"
+                android:textSize="@dimen/headerFontSize" />
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/ArtistsWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/StatLoadButton"
+                android:layout_marginTop="250dp">
+
+            </android.support.v7.widget.GridLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ArtistsWrapper"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="280dp"
+                android:paddingLeft="@dimen/headerPadding"
+                android:text="Top Utwory"
+                android:textSize="@dimen/headerFontSize" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
 </android.support.constraint.ConstraintLayout>

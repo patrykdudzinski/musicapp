@@ -4,6 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SavedPlaylists">
+    tools:context=".Stats">
+
+    <ScrollView
+        android:layout_width="397dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/StatsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/headerPadding"
+                android:paddingLeft="@dimen/headerPadding"
+                android:text="Zapisane listy odtwarzania:"
+                android:textSize="@dimen/headerFontSize" />
+
+    </ScrollView>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/SavedListsWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_editor_absoluteX="8dp"
+        app:layout_editor_absoluteY="80dp">
+
+
+    </android.support.v7.widget.GridLayout>
+
 
 </android.support.constraint.ConstraintLayout>

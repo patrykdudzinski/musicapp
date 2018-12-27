@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Musiconator</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Wprowadź hasło</string>
+    <string name="action_log_in">Zaloguj się</string>
+    <string name="login_header">Witaj w Musiconator!</string>
+    <string name="login_subheader">Na początek zaloguj lub zarjestruj się</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="PanelHeader">Witaj</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="DeleteString">Usuń</string>
+    <string name="SaveString">Zapisz</string>
+    <string name="PlayString">Odtwórz</string>
+    <string name="RegisterView_Header"> Załóż konto w Musiconatorze </string>
+    <string name="title_activity_main_profile">MainProfile</string>
+
+    <string-array name="moods_array">
+        <item>Energia</item>
+        <item>Smutek</item>
+        <item>Radość</item>
+        <item>Spokój</item>
+        <item>Skupienie</item>
+        <item>Strach</item>
+        <item>Kac</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>Nad ranem</item>
+        <item>Poranek</item>
+        <item>Południe</item>
+        <item>Popołudnie</item>
+        <item>Wczesny wieczór</item>
+        <item>Wieczór</item>
+        <item>Noc</item>
+    </string-array>
+
+    <string-array name="activity_array">
+        <item>Ćwiczenia</item>
+        <item>Posiłek</item>
+        <item>Do pracy/szkoły</item>
+        <item>Praca</item>
+        <item>Nauka</item>
+        <item>Relaks</item>
+        <item>W podróży</item>
+        <item>Impreza</item>
+        <item>Spacer</item>
+    </string-array>
+
+</resources>
