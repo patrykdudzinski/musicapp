@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#003366</color>
+    <color name="Button_TextColor">#ffffff</color>
+    <color name="Button_BgColor">#7cb342</color>
+    <color name="Register_AlertHeaderColor">#b20000</color>
+
+</resources>

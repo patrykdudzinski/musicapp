@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="57dp">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="414dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="19dp"
+        android:paddingTop="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="19dp">
+
+        <Button
+            android:id="@+id/NewPlaylistButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="NOWA PLAYLISTA"
+            android:onClick="MainScreenButtons"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <Button
+            android:id="@+id/SavedButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="ZAPISANE"
+            android:onClick="MainScreenButtons"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <Button
+            android:id="@+id/StatButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:onClick="MainScreenButtons"
+            android:text="STATYSTYKI"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <Button
+            android:id="@+id/ProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="MAPUJ UTWORY"
+            android:onClick="MainScreenButtons"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="295dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorAccent">
+
+        <Button
+            android:id="@+id/ToolbarAlbumCover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/iconnote"
+            />
+
+        <Button
+            android:id="@+id/ToolbarPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="MainScreenButtons"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/mock2"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="10dp">
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

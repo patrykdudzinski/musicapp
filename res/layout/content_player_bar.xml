@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".PlayerBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/PlayerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        >
+
+        <Button
+            android:id="@+id/ToolbarAlbumCover"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/iconnote"
+             />
+
+        <Button
+            android:id="@+id/ToolbarPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/mock2"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <Button
+            android:id="@+id/ToolbarPause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mock5"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="10dp">
+
+        </ProgressBar>
+    </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+
